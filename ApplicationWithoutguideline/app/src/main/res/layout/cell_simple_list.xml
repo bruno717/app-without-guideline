@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cell_simple_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:gravity="left|start|center_vertical"
+        android:text=""
+        android:textColor="@color/text_view_text_color"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cell_divider" />
+
+</RelativeLayout>

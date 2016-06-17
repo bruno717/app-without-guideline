@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/activity_dialogs_button_progress"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_elevado_primario"
+            android:text="Progress dialog"
+            android:textColor="@android:color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/activity_dialogs_button_text_input"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_elevado_primario"
+            android:text="Text input dialog"
+            android:textColor="@android:color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/activity_dialogs_button_number_input"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_elevado_primario"
+            android:text="Number input dialog"
+            android:textColor="@android:color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/activity_dialogs_button_password_input"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_elevado_primario"
+            android:text="Password input dialog"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

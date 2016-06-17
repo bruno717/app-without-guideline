@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:autoCompleteTextViewStyle">@color/colorPrimaryDark</item>
+
+        <!-- buttons -->
+        <item name="android:textAllCaps">false</item>
+
+        <!-- dialogs -->
+        <item name="md_title_color">@color/colorPrimary</item>
+        <item name="md_positive_color">@color/colorPrimary</item>
+        <item name="md_negative_color">@color/colorPrimary</item>
+        <item name="md_widget_color">@color/colorPrimary</item>
+
+    </style>
+
+
+    <!--Style Input¬-->
+    <style name="App.Input" parent="AppTheme">
+        <item name="android:textColorHint">@color/input_text_hint</item>
+
+        <item name="colorControlNormal">@color/control_normal</item>
+        <item name="colorControlActivated">@color/control_activated</item>
+        <item name="colorControlHighlight">@color/control_highlight</item>
+    </style>
+
+</resources>

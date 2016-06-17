@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Main style-->
+    <color name="colorPrimary">#D32F2F</color>
+    <color name="colorPrimaryDark">#9E2323</color>
+    <color name="colorAccent">@android:color/white</color>
+
+    <color name="control_normal">#BDBDBD</color>
+    <color name="control_activated">@color/colorPrimary</color>
+    <color name="control_highlight">@color/colorPrimary</color>
+
+    <color name="black">#212121</color>
+
+    <!-- Text View -->
+    <color name="text_view_text_color">@color/black</color>
+
+    <!-- Buttons -->
+    <color name="button_elevado_normal_primario">#D32F2F</color>
+    <color name="button_elevado_pressionado_primario">#E57373</color>
+    <color name="sesc_text_button_elevado_primario">@android:color/white</color>
+
+    <color name="button_elevado_normal_secundario">#607D8B</color>
+    <color name="button_elevado_pressionado_secundario">#90A4AE</color>
+    <color name="text_button_elevado_secundario">@android:color/white</color>
+
+    <color name="button_elevado_normal_terciario">@android:color/transparent</color>
+    <color name="button_elevado_pressionado_terciario">#EEEEEE</color>
+    <color name="text_button_elevado_terciario">@color/black</color>
+
+    <color name="button_flat_normal_primario">@android:color/transparent</color>
+    <color name="button_flat_pressionado_primario">#FFCDD2</color>
+    <color name="text_button_flat_primario">#D32F2F</color>
+
+    <color name="button_flat_normal_secundario">@android:color/transparent</color>
+    <color name="button_flat_pressionado_secundario">#CFD8DC</color>
+    <color name="text_button_flat_secundario">#607D8B</color>
+
+    <color name="button_flat_normal_terciario">@android:color/transparent</color>
+    <color name="button_flat_pressionado_terciario">#F5F5F5</color>
+    <color name="text_button_flat_terciario">@color/black</color>
+
+    <!--Text Input Layout-->
+    <color name="input_text_hint">@color/control_normal</color>
+    <color name="text_input_color">@color/black</color>
+
+    <!--List-->
+    <color name="cell_divider">#BDBDBD</color>
+
+</resources>
