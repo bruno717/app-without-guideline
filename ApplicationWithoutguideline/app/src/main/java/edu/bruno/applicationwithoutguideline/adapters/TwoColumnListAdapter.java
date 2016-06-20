@@ -15,12 +15,12 @@ import edu.bruno.applicationwithoutguideline.interfaces.OnItemClickListener;
 /**
  * Created by bruno.oliveira on 6/17/16.
  */
-public class SimpleListAdapter extends RecyclerView.Adapter<SimpleListAdapter.ViewHolder> {
+public class TwoColumnListAdapter extends RecyclerView.Adapter<TwoColumnListAdapter.ViewHolder> {
 
     private LayoutInflater mLayoutInflater;
     private OnItemClickListener mListener;
 
-    public SimpleListAdapter(Context context, OnItemClickListener listener) {
+    public TwoColumnListAdapter(Context context, OnItemClickListener listener) {
         mListener = listener;
         if (context != null)
             mLayoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -28,7 +28,7 @@ public class SimpleListAdapter extends RecyclerView.Adapter<SimpleListAdapter.Vi
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = mLayoutInflater.inflate(R.layout.cell_simple_list, parent, false);
+        View view = mLayoutInflater.inflate(R.layout.cell_two_columns, parent, false);
         return new ViewHolder(view);
     }
 
@@ -36,8 +36,8 @@ public class SimpleListAdapter extends RecyclerView.Adapter<SimpleListAdapter.Vi
     public void onBindViewHolder(ViewHolder holder, int position) {
 
         final int pos = position;
-        String text = "Item linha " + ++position;
-        holder.mTextView.setText(text);
+        holder.mTextViewColumn1.setText("C1 - " + ++position);
+        holder.mTextViewColumn2.setText("C2 - " + ++position);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,8 +56,10 @@ public class SimpleListAdapter extends RecyclerView.Adapter<SimpleListAdapter.Vi
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        @BindView(R.id.cell_simple_text_title)
-        TextView mTextView;
+        @BindView(R.id.cell_two_colunm_1)
+        TextView mTextViewColumn1;
+        @BindView(R.id.cell_two_colunm_2)
+        TextView mTextViewColumn2;
 
         public ViewHolder(View itemView) {
             super(itemView);

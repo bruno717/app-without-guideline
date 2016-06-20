@@ -29,6 +29,17 @@
             android:textColor="@android:color/white" />
 
         <android.support.v7.widget.AppCompatButton
+            android:id="@+id/activity_lists_button_lista_duas_colunas"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_elevado_primario"
+            android:padding="8dp"
+            android:text="Lista com duas colunas"
+            android:textColor="@android:color/white" />
+
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/activity_lists_button_lista_tres_colunas"
             android:layout_width="250dp"
             android:layout_height="@dimen/button_height"

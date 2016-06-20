@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:minHeight="100dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="0">
+
+            <ImageView
+                android:id="@+id/cell_details_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@mipmap/profile_placeholder" />
+
+            <ProgressBar
+                android:id="@+id/cell_details_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cell_details_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:singleLine="true"
+                android:text="Janice de Vasconcelos"
+                android:textColor="@color/text_view_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/cell_details_line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:text="Credencial plena"
+                android:textColor="@color/text_view_text_color"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cell_details_line3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Titular"
+                    android:textColor="@color/text_view_text_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cell_details_warning_separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="-"
+                    android:textColor="@color/text_view_text_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cell_details_warning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inativa"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/cell_details_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_warning_gray_18dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/cell_details_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:button="@drawable/combo_box"
+            android:checked="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:paddingEnd="28dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="28dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/cell_details_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cell_divider" />
+
+</RelativeLayout>

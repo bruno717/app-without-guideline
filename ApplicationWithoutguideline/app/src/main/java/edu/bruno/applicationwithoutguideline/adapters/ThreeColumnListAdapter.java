@@ -10,15 +10,18 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import edu.bruno.applicationwithoutguideline.R;
+import edu.bruno.applicationwithoutguideline.interfaces.OnItemClickListener;
 
 /**
  * Created by bruno.oliveira on 6/17/16.
  */
-public class ListThreeColumnAdapter extends RecyclerView.Adapter<ListThreeColumnAdapter.ViewHolder> {
+public class ThreeColumnListAdapter extends RecyclerView.Adapter<ThreeColumnListAdapter.ViewHolder> {
 
     private LayoutInflater mLayoutInflater;
+    private OnItemClickListener mListener;
 
-    public ListThreeColumnAdapter(Context context) {
+    public ThreeColumnListAdapter(Context context, OnItemClickListener listener) {
+        mListener = listener;
         if (context != null)
             mLayoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
@@ -32,7 +35,18 @@ public class ListThreeColumnAdapter extends RecyclerView.Adapter<ListThreeColumn
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
+        final int pos = position;
+        holder.mTextViewColumn1.setText("C1 - " + ++position);
+        holder.mTextViewColumn2.setText("C2 - " + ++position);
+        holder.mTextViewColumn3.setText("C3 - " + ++position);
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mListener != null)
+                    mListener.onItemClick(v, pos);
+            }
+        });
     }
 
     @Override

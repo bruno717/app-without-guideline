@@ -20,7 +20,6 @@
 
     </style>
 
-
     <!--Style Input¬-->
     <style name="App.Input" parent="AppTheme">
         <item name="android:textColorHint">@color/input_text_hint</item>

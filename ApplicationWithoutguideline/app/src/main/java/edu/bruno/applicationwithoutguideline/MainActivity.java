@@ -36,4 +36,9 @@ public class MainActivity extends AppCompatActivity {
     public void showActivityLists(View v) {
         startActivity(new Intent(this, ListsActivity.class));
     }
+
+    @OnClick(R.id.activity_main_button_drawer)
+    public void showActivityDrawer(View v) {
+        startActivity(new Intent(this, DrawerMenuActivity.class));
+    }
 }

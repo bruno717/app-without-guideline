@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:minHeight="130dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="0">
+
+                <ImageView
+                    android:id="@+id/cell_details_status_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/profile_placeholder" />
+
+                <ProgressBar
+                    android:id="@+id/cell_details_status_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cell_details_status_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:singleLine="true"
+                    android:textColor="@color/text_view_text_color"
+                    android:textSize="22dp"
+                    tools:text="NOME DO USUÁRIO" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cell_details_status_line2_column1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp"
+                        android:paddingTop="4dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_view_text_color"
+                        android:textSize="18sp"
+                        tools:text="CREDENCIAL:" />
+
+                    <TextView
+                        android:id="@+id/cell_details_status_line2_column2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/text_view_text_color"
+                        android:textSize="18sp"
+                        tools:text="1234" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cell_details_status_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:button="@drawable/combo_box"
+                android:checked="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:paddingEnd="28dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="28dp" />
+
+        </LinearLayout>
+
+        <!-- Linha de status -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp">
+
+
+            <TextView
+                android:id="@+id/cell_details_status_textview_column1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/text_view_text_color"
+                android:textSize="16sp"
+                tools:text="Pagamento:" />
+
+            <ImageView
+                android:id="@+id/cell_details_status_imageview_column1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                tools:src="@mipmap/ic_warning_yellow_36dp" />
+
+
+            <TextView
+                android:id="@+id/cell_details_status_textview_column2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/text_view_text_color"
+                android:textSize="16sp"
+                tools:text="Clínico" />
+
+            <ImageView
+                android:id="@+id/cell_details_status_imageview_column2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                tools:src="@mipmap/ic_warning_yellow_36dp" />
+
+
+            <TextView
+                android:id="@+id/cell_details_status_textview_column3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/text_view_text_color"
+                android:textSize="16sp"
+                tools:text="Dermatológico" />
+
+            <ImageView
+                android:id="@+id/cell_details_status_imageview_column3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                tools:src="@mipmap/ic_delete_36dp" />
+
+            <TextView
+                android:id="@+id/cell_details_status_textview_column4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/text_view_text_color"
+                android:textSize="16sp"
+                tools:text="Credencial:" />
+
+            <ImageView
+                android:id="@+id/cell_details_status_imageview_column4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                tools:src="@mipmap/ic_check_36dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/cell_details_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cell_divider" />
+
+</RelativeLayout>

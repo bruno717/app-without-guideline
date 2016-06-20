@@ -35,6 +35,10 @@
             android:name=".ListsActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".DrawerMenuActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
