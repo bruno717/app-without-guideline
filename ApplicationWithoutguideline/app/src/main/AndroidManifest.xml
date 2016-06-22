@@ -39,6 +39,10 @@
             android:name=".DrawerMenuActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".SearchViewActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

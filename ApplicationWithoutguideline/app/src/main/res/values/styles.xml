@@ -6,7 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
+        <item name="colorControlNormal">@android:color/white</item>
         <item name="android:autoCompleteTextViewStyle">@color/colorPrimaryDark</item>
 
         <!-- buttons -->
@@ -17,6 +17,7 @@
         <item name="md_positive_color">@color/colorPrimary</item>
         <item name="md_negative_color">@color/colorPrimary</item>
         <item name="md_widget_color">@color/colorPrimary</item>
+
 
     </style>
 

@@ -41,4 +41,9 @@ public class MainActivity extends AppCompatActivity {
     public void showActivityDrawer(View v) {
         startActivity(new Intent(this, DrawerMenuActivity.class));
     }
+
+    @OnClick(R.id.activity_main_button_searchview)
+    public void showActivitySearchView(View v) {
+        startActivity(new Intent(this, SearchViewActivity.class));
+    }
 }
